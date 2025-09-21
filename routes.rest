@@ -1,0 +1,44 @@
+# LOCALHOST CUSTOMERS API
+
+### Get all customers
+GET http://localhost:8000/customers
+# Returns a JSON array of all customers in the database.
+
+### Get customer by id 
+GET http://localhost:8000/customers/68cf6a7a30e30108d43e3ab5
+
+
+### Create a new customer
+POST http://localhost:8000/customers HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Ben",
+    "lastName": "Dammy",
+    "email": "damilola.degoke@gmail.com",
+    "phone": "+23480144444",
+    "birthday": "1992-11-21",
+    "favoriteProduct": "Promax",
+    "city": "Lag",
+    "country": "Niger"
+}
+
+
+### Update an existing customer
+PUT http://localhost:8000/customers/68d03df1bb36fd6fd07aa7bb HTTP/1.1
+content-type: application/json
+
+{ 
+    "firstName": "Benjamin",
+    "lastName": "Dammy",
+    "email": "damilola.degoke@gmail.com",
+    "phone": "+23480144444",
+    "birthday": "1992-11-21",
+    "favoriteProduct": "Promax",
+    "city": "kano",
+    "country": "Nigeria" 
+}
+
+### Delete a customer
+DELETE http://localhost:8000/customers/68d03df1bb36fd6fd07aa7bb
+
