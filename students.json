@@ -1,0 +1,57 @@
+[
+  {
+    "firstName": "Amina",
+    "lastName": "Okoro",
+    "email": "aminaokoro@gmail.com",
+    "phone": "+2348012345678",
+    "birthday": "2002-03-14",
+    "major": "Computer Science",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "gpa": 3.8
+  },
+  {
+    "firstName": "Liam",
+    "lastName": "Nguyen",
+    "email": "liam.nguyen@yahoo.com",
+    "phone": "+1-555-0123",
+    "birthday": "2001-07-22",
+    "major": "Electrical Engineering",
+    "city": "San Jose",
+    "country": "USA",
+    "gpa": 3.6
+  },
+  {
+    "firstName": "Sophia",
+    "lastName": "Martinez",
+    "email": "sophiamartinez@hotmail.com",
+    "phone": "+34-600-123456",
+    "birthday": "2003-11-05",
+    "major": "Biology",
+    "city": "Madrid",
+    "country": "Spain",
+    "gpa": 3.9
+  },
+  {
+    "firstName": "Noah",
+    "lastName": "Kowalski",
+    "email": "noah.kowalski@bluemail.com",
+    "phone": "+48-123-456-789",
+    "birthday": "2000-02-18",
+    "major": "Mathematics",
+    "city": "Warsaw",
+    "country": "Poland",
+    "gpa": 3.7
+  },
+  {
+    "firstName": "Emma",
+    "lastName": "Dubois",
+    "email": "emmadubois@gmail.com",
+    "phone": "+33-6-12-34-5678",
+    "birthday": "1999-09-30",
+    "major": "Economics",
+    "city": "Paris",
+    "country": "France",
+    "gpa": 3.5
+  }
+]
