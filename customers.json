@@ -1,0 +1,52 @@
+[
+  {
+    "firstName": "Damilola",
+    "lastName": "Adegoke",
+    "email": "damiloladegoke@gmail.com",
+    "phone": "+2348012345678",
+    "birthday": "1992-11-21",
+    "favoriteProduct": "Widget Pro",
+    "city": "Lagos",
+    "country": "Nigeria"
+  },
+  {
+    "firstName": "Alex",
+    "lastName": "Johnson",
+    "email": "alex.johnson@gmail.com",
+    "phone": "+1-555-0100",
+    "birthday": "1990-04-12",
+    "favoriteProduct": "Gadget X",
+    "city": "Springfield",
+    "country": "USA"
+  },
+  {
+    "firstName": "Daniel",
+    "lastName": "Oliver",
+    "email": "olivedan44@gmail.com",
+    "phone": "+44-20-7946-0958",
+    "birthday": "1988-02-14",
+    "favoriteProduct": "Widget Mini",
+    "city": "London",
+    "country": "UK"
+  },
+  {
+    "firstName": "Precious",
+    "lastName": "Aderemi",
+    "email": "preciousdlaw@yahoo.com",
+    "phone": "+2348037654321",
+    "birthday": "1985-09-03",
+    "favoriteProduct": "Gizmo Plus",
+    "city": "Ibadan",
+    "country": "Nigeria"
+  },
+  {
+    "firstName": "Sofia",
+    "lastName": "Moretti",
+    "email": "sofia.moretti@example.it",
+    "phone": "+39-06-1234-5678",
+    "birthday": "1995-07-07",
+    "favoriteProduct": "Widget Pro",
+    "city": "Rome",
+    "country": "Italy"
+  }
+]
