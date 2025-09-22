@@ -33,6 +33,7 @@ const getSingle = async (req, res) => {
 const createStudent = async (req, res) => {
   // #swagger.tags = ['Students']
   try {
+    console.log('Request body:', req.body);
     const student = {
       firstName: req.body.firstName,
       lastName: req.body.lastName,
@@ -59,6 +60,7 @@ const createStudent = async (req, res) => {
 const updateStudent = async (req, res) => {
   // #swagger.tags = ['Students']
   try {
+    console.log('Request body:', req.body);
     if (!ObjectId.isValid(req.params.id)) {
       return res.status(400).json({ success: false, message: 'Invalid student ID.' });
     }

@@ -37,6 +37,7 @@ const getSingle = async (req, res) => {
 const createCustomer = async (req, res) => {
   // #swagger.tags = ['Customers']
   try {
+    console.log('Request body:', req.body);
     const customer = {
       firstName: req.body.firstName,
       lastName: req.body.lastName,
@@ -63,6 +64,7 @@ const createCustomer = async (req, res) => {
 const updateCustomer = async (req, res) => {
   // #swagger.tags = ['Customers']
   try {
+    console.log('Request body:', req.body);
     if (!ObjectId.isValid(req.params.id)) {
       return res.status(400).json({ success: false, message: 'Invalid customer ID.' });
     }
