@@ -2,16 +2,22 @@ const express = require('express');
 const router = express.Router();
 
 const customersController = require('../controllers/customers');
-// const validation = require('../middleware/validate');
+const validate = require('../middleware/validateCustomers');
 
-router.get('/', customersController.getAll); 
+// CRUD operations for customers
+// GET all customers
+router.get('/', customersController.getAll);
 
+// GET a single customer
 router.get('/:id', customersController.getSingle);
 
-router.post('/', customersController.createCustomer);
+// POST create a customer
+router.post('/', validate.customerRules, validate.check, customersController.createCustomer);
 
-router.put('/:id', customersController.updateCustomer);
+// PUT update a customer
+router.put('/:id', validate.customerRules, validate.check, customersController.updateCustomer);
 
+// DELETE a customer
 router.delete('/:id', customersController.deleteCustomer);
 
 module.exports = router;
