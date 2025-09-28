@@ -5,11 +5,10 @@
     "description": "Customers and Students API with CRUD operations",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "project2-qfhh.onrender.com",
   "basePath": "/",
   "schemes": [
-    "https",
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
@@ -232,51 +231,40 @@
         "tags": [
           "Students"
         ],
-        "description": "Create a new student",
+        "description": "",
         "parameters": [
           {
             "name": "body",
             "in": "body",
-            "description": "Student information",
-            "required": true,
             "schema": {
               "type": "object",
               "properties": {
                 "firstName": {
-                  "type": "string",
-                  "example": "Amina"
+                  "example": "any"
                 },
                 "lastName": {
-                  "type": "string",
-                  "example": "Okoro"
+                  "example": "any"
                 },
                 "email": {
-                  "type": "string",
-                  "example": "aminaokoro@gmail.com"
+                  "example": "any"
                 },
                 "phone": {
-                  "type": "string",
-                  "example": "+2348012345678"
+                  "example": "any"
                 },
                 "birthday": {
-                  "type": "string",
-                  "example": "2002-03-14"
+                  "example": "any"
                 },
                 "major": {
-                  "type": "string",
-                  "example": "Computer Science"
-                },
-                "gpa": {
-                  "type": "number",
-                  "example": 3.8
+                  "example": "any"
                 },
                 "city": {
-                  "type": "string",
-                  "example": "Abuja"
+                  "example": "any"
                 },
                 "country": {
-                  "type": "string",
-                  "example": "Nigeria"
+                  "example": "any"
+                },
+                "gpa": {
+                  "example": "any"
                 }
               }
             }
@@ -284,13 +272,13 @@
         ],
         "responses": {
           "201": {
-            "description": "Student created successfully"
+            "description": "Created"
           },
           "400": {
-            "description": "Validation error"
+            "description": "Bad Request"
           },
           "500": {
-            "description": "Server error"
+            "description": "Internal Server Error"
           }
         }
       }
@@ -325,7 +313,7 @@
         "tags": [
           "Students"
         ],
-        "description": "Create a new student",
+        "description": "",
         "parameters": [
           {
             "name": "id",
@@ -336,63 +324,49 @@
           {
             "name": "body",
             "in": "body",
-            "description": "Student information",
-            "required": true,
             "schema": {
               "type": "object",
               "properties": {
                 "firstName": {
-                  "type": "string",
-                  "example": "Amina"
+                  "example": "any"
                 },
                 "lastName": {
-                  "type": "string",
-                  "example": "Okoro"
+                  "example": "any"
                 },
                 "email": {
-                  "type": "string",
-                  "example": "aminaokoro@gmail.com"
+                  "example": "any"
                 },
                 "phone": {
-                  "type": "string",
-                  "example": "+2348012345678"
+                  "example": "any"
                 },
                 "birthday": {
-                  "type": "string",
-                  "example": "2002-03-14"
+                  "example": "any"
                 },
                 "major": {
-                  "type": "string",
-                  "example": "Computer Science"
-                },
-                "gpa": {
-                  "type": "number",
-                  "example": 3.8
+                  "example": "any"
                 },
                 "city": {
-                  "type": "string",
-                  "example": "Abuja"
+                  "example": "any"
                 },
                 "country": {
-                  "type": "string",
-                  "example": "Nigeria"
+                  "example": "any"
+                },
+                "gpa": {
+                  "example": "any"
                 }
               }
             }
           }
         ],
         "responses": {
-          "201": {
-            "description": "Student created successfully"
-          },
           "204": {
             "description": "No Content"
           },
           "400": {
-            "description": "Validation error"
+            "description": "Bad Request"
           },
           "500": {
-            "description": "Server error"
+            "description": "Internal Server Error"
           }
         }
       },
