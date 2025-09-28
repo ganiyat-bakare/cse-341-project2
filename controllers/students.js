@@ -40,9 +40,10 @@ const createStudent = async (req, res) => {
       email: req.body.email,
       phone: req.body.phone,
       birthday: req.body.birthday,
-      course: req.body.course,
+      major: req.body.major,
       city: req.body.city,
-      country: req.body.country
+      country: req.body.country,
+      gpa: req.body.gpa
     };
 
     const response = await mongodb.getDatabase().db().collection('students').insertOne(student);
@@ -71,9 +72,10 @@ const updateStudent = async (req, res) => {
       email: req.body.email,
       phone: req.body.phone,
       birthday: req.body.birthday,
-      course: req.body.course,
+      major: req.body.major,
       city: req.body.city,
-      country: req.body.country
+      country: req.body.country,
+      gpa: req.body.gpa
     };
 
     const response = await mongodb
