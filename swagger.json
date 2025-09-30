@@ -8,18 +8,25 @@
   "host": "project2-qfhh.onrender.com",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
-    "/": {
+    "/login": {
       "get": {
-        "tags": [
-          "Hello World"
-        ],
         "description": "",
         "responses": {
-          "200": {
-            "description": "OK"
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/logout": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
           }
         }
       }
@@ -70,9 +77,6 @@
                 "email": {
                   "example": "any"
                 },
-                "phone": {
-                  "example": "any"
-                },
                 "birthday": {
                   "example": "any"
                 },
@@ -95,6 +99,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
           },
           "500": {
             "description": "Internal Server Error"
@@ -155,9 +162,6 @@
                 "email": {
                   "example": "any"
                 },
-                "phone": {
-                  "example": "any"
-                },
                 "birthday": {
                   "example": "any"
                 },
@@ -180,6 +184,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
           },
           "500": {
             "description": "Internal Server Error"
@@ -205,6 +212,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
           },
           "500": {
             "description": "Internal Server Error"
@@ -248,9 +258,6 @@
                 "email": {
                   "example": "any"
                 },
-                "phone": {
-                  "example": "any"
-                },
                 "birthday": {
                   "example": "any"
                 },
@@ -276,6 +283,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
           },
           "500": {
             "description": "Internal Server Error"
@@ -336,9 +346,6 @@
                 "email": {
                   "example": "any"
                 },
-                "phone": {
-                  "example": "any"
-                },
                 "birthday": {
                   "example": "any"
                 },
@@ -365,6 +372,9 @@
           "400": {
             "description": "Bad Request"
           },
+          "401": {
+            "description": "Unauthorized"
+          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -389,6 +399,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
           },
           "500": {
             "description": "Internal Server Error"

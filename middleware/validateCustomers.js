@@ -25,13 +25,6 @@ validate.customerRules = [
     .isEmail()
     .withMessage('Must be a valid email address, e.g. john.doe@mail.com'),
 
-  body('phone')
-    .trim()
-    .notEmpty()
-    .withMessage('Phone number is required')
-    .isMobilePhone('any')
-    .withMessage('Must be a valid phone number with country code, e.g. +2348012345678'),
-
   body('birthday')
     .trim()
     .notEmpty()

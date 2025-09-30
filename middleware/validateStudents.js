@@ -24,12 +24,6 @@ validate.studentRules = [
     .isEmail()
     .withMessage('Must be a valid email address'),
 
-  body('phone')
-    .notEmpty()
-    .withMessage('Phone number is required, e.g. +2348012345678')
-    .isMobilePhone('any')
-    .withMessage('Must be a valid phone number with country code'),
-
   body('birthday')
     .notEmpty()
     .withMessage('Birthday is required, e.g. 2002-03-14')
