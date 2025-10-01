@@ -5,9 +5,9 @@
     "description": "Customers and Students API with CRUD operations",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "project2-qfhh.onrender.com",
   "basePath": "/",
-  "schemes": ["http"],
+  "schemes": ["https"],
   "paths": {
     "/login": {
       "get": {
