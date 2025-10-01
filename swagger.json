@@ -5,11 +5,9 @@
     "description": "Customers and Students API with CRUD operations",
     "version": "1.0.0"
   },
-  "host": "project2-qfhh.onrender.com",
+  "host": "localhost:3000",
   "basePath": "/",
-  "schemes": [
-    "https"
-  ],
+  "schemes": ["http"],
   "paths": {
     "/login": {
       "get": {
@@ -43,9 +41,7 @@
     },
     "/customers/": {
       "get": {
-        "tags": [
-          "Customers"
-        ],
+        "tags": ["Customers"],
         "description": "",
         "responses": {
           "200": {
@@ -57,9 +53,7 @@
         }
       },
       "post": {
-        "tags": [
-          "Customers"
-        ],
+        "tags": ["Customers"],
         "description": "",
         "parameters": [
           {
@@ -111,9 +105,7 @@
     },
     "/customers/{id}": {
       "get": {
-        "tags": [
-          "Customers"
-        ],
+        "tags": ["Customers"],
         "description": "",
         "parameters": [
           {
@@ -136,9 +128,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Customers"
-        ],
+        "tags": ["Customers"],
         "description": "",
         "parameters": [
           {
@@ -194,9 +184,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Customers"
-        ],
+        "tags": ["Customers"],
         "description": "",
         "parameters": [
           {
@@ -224,9 +212,7 @@
     },
     "/students/": {
       "get": {
-        "tags": [
-          "Students"
-        ],
+        "tags": ["Students"],
         "description": "",
         "responses": {
           "200": {
@@ -238,9 +224,7 @@
         }
       },
       "post": {
-        "tags": [
-          "Students"
-        ],
+        "tags": ["Students"],
         "description": "",
         "parameters": [
           {
@@ -295,9 +279,7 @@
     },
     "/students/{id}": {
       "get": {
-        "tags": [
-          "Students"
-        ],
+        "tags": ["Students"],
         "description": "",
         "parameters": [
           {
@@ -320,9 +302,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Students"
-        ],
+        "tags": ["Students"],
         "description": "",
         "parameters": [
           {
@@ -381,9 +361,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Students"
-        ],
+        "tags": ["Students"],
         "description": "",
         "parameters": [
           {

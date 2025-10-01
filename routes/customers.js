@@ -3,6 +3,7 @@ const router = express.Router();
 
 const customersController = require('../controllers/customers');
 const validate = require('../middleware/validateCustomers');
+const { isAuthenticated } = require('../middleware/authenticate');
 
 // CRUD operations for customers
 // GET all customers
@@ -12,12 +13,27 @@ router.get('/', customersController.getAll);
 router.get('/:id', customersController.getSingle);
 
 // POST create a customer
-router.post('/', validate.customerRules, validate.check, customersController.createCustomer);
+// #swagger.security = [{ "oauth": [] }]
+router.post(
+  '/',
+  isAuthenticated,
+  validate.customerRules,
+  validate.check,
+  customersController.createCustomer
+);
 
 // PUT update a customer
-router.put('/:id', validate.customerRules, validate.check, customersController.updateCustomer);
+// #swagger.security = [{ "oauth": [] }]
+router.put(
+  '/:id',
+  isAuthenticated,
+  validate.customerRules,
+  validate.check,
+  customersController.updateCustomer
+);
 
 // DELETE a customer
-router.delete('/:id', customersController.deleteCustomer);
+// #swagger.security = [{ "oauth": [] }]
+router.delete('/:id', isAuthenticated, customersController.deleteCustomer);
 
 module.exports = router;
